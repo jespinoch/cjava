@@ -1,0 +1,63 @@
+###
+GET http://localhost:5000/ HTTP/1.1
+
+###
+POST http://localhost:5000/ HTTP/1.1
+Content-Type: application/json
+
+{
+"nombre": "Jorge Espinoza",
+"correo": "jorge.e2008@gmail.com",
+"telefono": "993919600",
+"direccion": "Av Del Parque Sur 468"
+}
+
+### 
+DELETE http://localhost:5000/8 HTTP/1.1
+
+
+ CREATE TABLE cliente (
+    ->   id INT AUTO_INCREMENT PRIMARY KEY,
+    ->   nombre VARCHAR(255),
+    ->   correo VARCHAR(255),
+    ->   telefono VARCHAR(20),
+    ->   direccion VARCHAR(255)
+    -> );
+
+mysql> INSERT INTO cliente (nombre, correo, telefono, direccion) VALUES
+    ->   ('Juan Pérez', 'juan@example.com', '1234567890', 'Calle Principal 123'),
+    ->   ('María López', 'maria@example.com', '9876543210', 'Avenida Central 456'),
+    ->   ('Pedro García', 'pedro@example.com', '5555555555', 'Plaza Mayor 789'),
+    ->   ('Laura Rodríguez', 'laura@example.com', '1111111111', 'Paseo del Sol 456'),
+    ->   ('Carlos Martínez', 'carlos@example.com', '2222222222', 'Callejón del Arte 789'),
+    ->   ('Ana Sánchez', 'ana@example.com', '3333333333', 'Boulevard Libertad 123'),
+    ->   ('Luis Torres', 'luis@example.com', '4444444444', 'Paseo de los Sueños 456'),
+    ->   ('Isabel Jiménez', 'isabel@example.com', '9999999999', 'Calle Principal 789'),
+    ->   ('Javier Herrera', 'javier@example.com', '8888888888', 'Avenida Central 123'),
+
+mysql> CREATE TABLE caracteristica (
+    ->   id INT AUTO_INCREMENT PRIMARY KEY,
+    ->   modelo VARCHAR(255),
+    ->   descripcion VARCHAR(255),
+    ->   valor VARCHAR(255)
+    -> );
+
+mysql> INSERT INTO caracteristica (modelo, descripcion, valor) VALUES
+    ->   ('Laptop 5', 'Procesador', 'Intel Core i7'),
+    ->   ('Laptop 5', 'Memoria RAM', '16GB'),
+    ->   ('Laptop 5', 'Almacenamiento', '512GB SSD'),
+    ->   ('Laptop 5', 'Tarjeta gráfica', 'NVIDIA GeForce RTX 3060'),
+    ->   ('Laptop 5', 'Sistema operativo', 'Windows 10'),
+    ->   ('Laptop 6', 'Procesador', 'AMD Ryzen 7'),
+    ->   ('Laptop 6', 'Memoria RAM', '32GB'),
+    ->   ('Laptop 6', 'Almacenamiento', '1TB SSD'),
+    ->   ('Laptop 6', 'Tarjeta gráfica', 'NVIDIA GeForce GTX 1650 Ti'),
+    ->   ('Laptop 6', 'Sistema operativo', 'Windows 10'),
+    ->   ('Laptop 7', 'Procesador', 'Intel Core i5'),
+    ->   ('Laptop 7', 'Memoria RAM', '8GB'),
+    ->   ('Laptop 7', 'Almacenamiento', '256GB SSD'),
+    ->   ('Laptop 7', 'Tarjeta gráfica', 'Intel Iris Xe Graphics'),
+    ->   ('Laptop 7', 'Sistema operativo', 'Windows 10'),
+    ->   ('Laptop 8', 'Procesador', 'AMD Ryzen 5'),
+    ->   ('Laptop 8', 'Memoria RAM', '16GB');      
+
